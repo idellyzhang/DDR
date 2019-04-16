@@ -1,8 +1,8 @@
 # DDR
 
 ## Requirements:
-R (packages: edgeR)
-Python (packages: pandas)
+* R (packages: edgeR)
+* Python (packages: pandas)
 
 ## Running the tool for finding differentially expressed genes 
 ```

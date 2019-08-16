@@ -25,7 +25,7 @@ Rscript step3_overlapFisher.R 115
 ```
 
 
-## Running the tool for finding differentially expressed genes 
+## Running all the steps together 
 ```
 Rscript DDR_Ref.R
 ```

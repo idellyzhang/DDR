@@ -1,15 +1,20 @@
 #####EdgeR###############
 library(edgeR)
 
+###### The types of data: Microarray and RNA-Seq #######################
+args <- commandArgs(trailingOnly = T)
+data <- args[1]
 # complete is the gene expression table that has first n columns as TN samples and remaining samples as OT (other)
 complete <- read.csv("processedTable.csv",row.names=1)
 print(dim(complete))
-grp <- as.factor(rep(1, ncol(complete)))
-y <- DGEList(complete,group=grp)
-y <- calcNormFactors(y,method="TMM")
-
-norm.table <- cpm(y)
-
+if(data == "RNASeq"){
+  grp <- as.factor(rep(1, ncol(complete)))
+  y <- DGEList(complete,group=grp)
+  y <- calcNormFactors(y,method="TMM")
+  norm.table <- cpm(y)
+} else if (data == "microarray"){
+  norm.table <- complete  
+}
 cov <- apply(norm.table,1, sd)/apply(norm.table,1, mean)
 mean <- apply(norm.table,1, mean)
 std <- apply(norm.table,1, sd)

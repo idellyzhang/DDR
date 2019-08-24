@@ -1,5 +1,5 @@
 
-BRCA_raw <- read.table(gzfile("data/allhtseqcounts.brca.csv.gz"), header = T,check.names = F,row.names = 1,sep=" ")
+BRCA_raw <- read.table(gzfile("../data/allhtseqcounts.brca.csv.gz"), header = T,check.names = F,row.names = 1,sep=" ")
 BRCA_clean <- BRCA_raw[,-grep("11A$|11B$",colnames(BRCA_raw))]
 colnames(BRCA_clean) <- substring(colnames(BRCA_clean),1,12)
 

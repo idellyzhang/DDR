@@ -39,10 +39,12 @@ Rscript step3_overlapFisher.R 115 RNASeq
 
 ## Pipeline for microarray data. 
 ### Note that the steps are similar to that for RNASeq data. 
+```
 Rscript step0_preprocess_microarray.R
 Rscript step1_calculateStats.R microarray 
 Rscript step2_findRef.R microarray
 Rscript step3_overlapFisher.R 115 microarray
+```
 
 ## Running all the steps together 
 ```

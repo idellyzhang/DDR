@@ -11,14 +11,14 @@
 Rscript step0_preprocess.R
 ```
 ### Step1 Calculate Stats
-#### Enter RNASeq or microarray as input argument.
+#### Based on the source of input file, enter RNASeq or microarray as input argument.
 ```
 Rscript step1_calculateStats.R RNASeq
 Rscript step1_calculateStats.R microarray 
 
 ```
 ### Step2 Find Reference set
-#### Enter RNASeq or microarray as input argument.
+#### Based on the source of input file, enter RNASeq or microarray as input argument.
 
 ```
 Rscript step2_findRef.R RNASeq
@@ -27,7 +27,7 @@ Rscript step2_findRef.R microarray
 ```
 ### Step3 Find overlap using Fisher's Exact test
 #### Enter number of samples in first group as first input argument.
-#### Enter RNASeq or microarray as second input argument.
+#### Based on the source of input file, enter RNASeq or microarray as second input argument.
 
 Since the example dataset has 115 samples in group1.
 ```

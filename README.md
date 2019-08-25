@@ -4,7 +4,7 @@
 * R (packages: edgeR)
 * Python (packages: pandas)
 
-## Workflow overview 
+## Figure 1. The Workflow of Data-Driven Reference (DDR) Package 
 ![Workflow](https://github.com/idellyzhang/DDR/blob/master/workflow_DDR.png)
 
 ## RNASeq Pipeline: 

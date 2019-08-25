@@ -11,8 +11,11 @@
 Rscript step0_preprocess.R
 ```
 ### Step1 Calculate Stats
+#### Enter RNASeq or microarray as input argument.
 ```
-Rscript step1_calculateStats.R 
+Rscript step1_calculateStats.R RNASeq
+Rscript step1_calculateStats.R microarray 
+
 ```
 ### Step2 Find Reference set
 ```

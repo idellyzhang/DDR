@@ -4,6 +4,9 @@
 * R (packages: edgeR)
 * Python (packages: pandas)
 
+## Workflow overview 
+![Workflow](https://github.com/idellyzhang/DDR/blob/master/workflow_DDR.png)
+
 ## RNASeq Pipeline: 
 Following series of steps show how to run the DDR method on RNASeq data. 
 

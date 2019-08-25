@@ -37,7 +37,8 @@ Rscript step3_overlapFisher.R 115 RNASeq
 * overlap_test_fdr_1_[RNASeq|microarray].csv or : Differentially expressed genes with fdr < 0.1
 * overlap_test_fdr_05_[RNASeq|microarray].csv: Differentially expressed genes with fdr < 0.05
 
-## Pipeline for microarray data. Note that the steps are similar to for RNASeq data. 
+## Pipeline for microarray data. 
+### Note that the steps are similar to that for RNASeq data. 
 Rscript step0_preprocess_microarray.R
 Rscript step1_calculateStats.R microarray 
 Rscript step2_findRef.R microarray

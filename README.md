@@ -49,5 +49,5 @@ Rscript DDR_Ref.R PYTHON_PATH
 ## Output files
 * final_out.csv: Normalized count data
 * ref_cpm.csv: Expression of reference genes
-* overlap_test_fdr_1_RNASeq.csv".csv: Differentially expressed genes with fdr < 0.1
-* overlap_test_fdr_05_RNASeq.csv: Differentially expressed genes with fdr < 0.05
+* overlap_test_fdr_1_[RNASeq|microarray].csv or : Differentially expressed genes with fdr < 0.1
+* overlap_test_fdr_05_[RNASeq|microarray].csv: Differentially expressed genes with fdr < 0.05

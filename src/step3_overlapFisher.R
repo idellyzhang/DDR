@@ -1,6 +1,6 @@
 args <- commandArgs(trailingOnly = T)
 group1.sampleSize <- as.numeric(args[1])
-data <- args[2]
+data <- as.numeric(args[2])
 # group1.sampleSize <- 115
 
 load("ref.gene.bin")

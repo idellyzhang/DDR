@@ -13,6 +13,7 @@ Following series of steps show how to run the DDR method on RNASeq data.
 ### Step0 Preprocess
 Step0 should be used to format the count table such that the input table has the gene expression table with first n columns as group1 samples (Triple negative:TN) and remaining columns as samples from group2 (other:OT). Rows represent the ENSG ids.
 ```
+cd src
 Rscript step0_preprocess.R
 ```
 ### Step1 Calculate Stats

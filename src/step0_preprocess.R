@@ -1,9 +1,9 @@
 
-BRCA_raw <- read.table(gzfile("../data/allhtseqcounts.brca.csv.gz"), header = T,check.names = F,row.names = 1,sep=" ")
+BRCA_raw <- read.table(gzfile("data/allhtseqcounts.brca.csv.gz"), header = T,check.names = F,row.names = 1,sep=" ")
 BRCA_clean <- BRCA_raw[,-grep("11A$|11B$",colnames(BRCA_raw))]
 colnames(BRCA_clean) <- substring(colnames(BRCA_clean),1,12)
 
-bc_er_pr_her_status <- read.table(file="../data/bc_er_pr_her_status.txt",header=F,sep=" ",stringsAsFactors = F)
+bc_er_pr_her_status <- read.table(file="data/bc_er_pr_her_status.txt",header=F,sep=" ",stringsAsFactors = F)
 TNindex <- which(bc_er_pr_her_status[,2] == "Negative" & bc_er_pr_her_status[,3] == "Negative" & bc_er_pr_her_status[,4] == "Negative")
 TN.barcodes <- as.character(bc_er_pr_her_status[TNindex,1])
 

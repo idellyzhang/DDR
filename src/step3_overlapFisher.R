@@ -233,7 +233,7 @@ if(data == "RNASeq"){
   write.csv(overlap_pvalue_fdr[keep, ], "overlap_test_fdr_1_RNASeq.csv")
   
   keep <- (overlap_pvalue_fdr$overlap_test_padjust <= 0.05) 
-  write.csv(overlap_pvalue_fdr[keep, ], "overlap_test_fdr_05_RANSeq.csv")
+  write.csv(overlap_pvalue_fdr[keep, ], "overlap_test_fdr_05_RNASeq.csv")
 } else if (data == "microarray") {
   WNT_cpm <- norm.table[, 1:group1.sampleSize]
   OT_cpm <- norm.table[, (group1.sampleSize+1):ncol(norm.table)]
